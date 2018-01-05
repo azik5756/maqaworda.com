@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Регистрация</title>
+	<link rel="stylesheet" href="reg.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="regist">
+		    <form action="pop.php" method="POST">
+		    	    <input type="text" name="name" placeholder="Enter your name:" required><br>
+                    <input type="text" name="surname" placeholder="Enter your surname:" required><br>
+                    <i class="fa fa-at"></i><input type="text" name="mail" placeholder="Enter your @mail:" required><br>
+                    <i class="fa fa-user-o"></i><input type="text" name="username" placeholder="Enter your username:" required><br>
+                    <i class="fa fa-lock"></i><input type="password" name="password" placeholder="Enter your password:" required> <br><br>
+                    <div class="button" onmouseover="vaq()"><input type="submit" value="REGISTRATE" class="jkl"></div>
+		    </form>
+	</div>
+	<script>
+	
+	function vaq()
+	{setTimeout(
+		function klf()
+		{
+		    var a=document.getElementsByClassName("jkl");
+		    var b=document.getElementsByClassName("button");
+		    a[0].value="We were funny if you are registrate";
+		    b[0].style.width="21%";
+		}
+		    ,1000);
+	};
+	</script>
+</body>
+</html>
